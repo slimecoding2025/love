@@ -8,10 +8,14 @@
 </head>
 <body>
     <div id="passwordScreen" class="screen">
-        <h1>Enter Password</h1>
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="checkPassword()">Enter</button>
-    </div>
+    <h1>Enter Password</h1>
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkPassword()">Enter</button>
+    <br>
+    <label>
+        <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()"> Show Password
+    </label>
+</div>
 
     <div id="content" class="screen hidden">
         <header>
