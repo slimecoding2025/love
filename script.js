@@ -9,3 +9,14 @@ function checkPassword() {
         alert("Incorrect password. Please try again.");
     }
 }
+
+function togglePasswordVisibility() {
+    const passwordInput = document.getElementById("password");
+    const showPasswordCheckbox = document.getElementById("showPassword");
+
+    if (showPasswordCheckbox.checked) {
+        passwordInput.type = "text"; // Show the password
+    } else {
+        passwordInput.type = "password"; // Hide the password
+    }
+}
