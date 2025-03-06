@@ -1,17 +1,11 @@
 function checkPassword() {
     const password = document.getElementById("password").value;
-    const passwordBox = document.querySelector(".password-box");
-    const content = document.getElementById("content");
+    const correctPassword = "05012007";
 
-    if (password === "05012007") {
-        passwordBox.classList.add("fade-out");
-
-        setTimeout(() => {
-            passwordBox.style.display = "none";
-            content.classList.remove("hidden");
-            content.classList.add("fade-in");
-        }, 1000);
+    if (password === correctPassword) {
+        document.getElementById("passwordScreen").classList.add("hidden");
+        document.getElementById("content").classList.remove("hidden");
     } else {
-        alert("Incorrect Password! Try again.");
+        alert("Incorrect password. Please try again.");
     }
 }
