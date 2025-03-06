@@ -99,25 +99,29 @@ li {
     margin: 1rem 0;
 }
 .message {
-    max-width: 800px; /* تحديد عرض النص */
-    margin: 0 auto; /* توسيط النص أفقياً */
-    padding: 20px; /* إضافة مساحة داخلية */
-    text-align: justify; /* محاذاة النص */
-    line-height: 1.6; /* تحسين تباعد الأسطر */
-    font-size: 18px; /* حجم الخط */
-    background-color: #f9f9f9; /* لون خلفية النص */
-    border-radius: 10px; /* زوايا مدورة */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
-    max-height: 70vh; /* تحديد ارتفاع النص بنسبة 70% من ارتفاع الشاشة */
-    overflow-y: auto; /* إضافة شريط تمرير عند الحاجة */
+    max-width: 800px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
 }
 
 .message h2 {
-    text-align: center; /* توسيط العنوان */
-    margin-bottom: 20px; /* مسافة أسفل العنوان */
-    color: #ff6f61; /* لون العنوان */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #ff6f61; /* Theme color */
 }
 
-.message p {
-    margin: 0; /* إزالة الهوامش الافتراضية للفقرات */
+.text-box {
+    background-color: #fff; /* White background for the box */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space between boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: justify; /* Justify the text inside the box */
+    line-height: 1.6; /* Improve readability */
+    font-size: 16px; /* Comfortable font size */
+}
+
+.text-box p {
+    margin: 0; /* Remove default margin for paragraphs */
 }
